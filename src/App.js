@@ -11,7 +11,7 @@ export default function App(props) {
     const [answer, setAnswer] = useState([]);
     const [answerBtn, setAnswerBtn] = useState(false);
     const [showQuestionBtn, setShowQuestionBtn] = useState(false);
-    const URL = 'http://jservice.io/api/random';
+    const URL = 'https://jservice.io/api/random';
 
     const increase = (e) => {
         setScore(score + answer[0].value);
@@ -90,6 +90,7 @@ export default function App(props) {
                                 <h3 id="title">Category:</h3> <p>{answer[0].category.title}</p><br/><br/>
                                 <h4 id="title">Points:</h4> <p>{answer[0].value}</p><br/><br/>
                                 <h4 id="title">Answer:</h4> <p>{answer[0].question}</p><br/><br/>
+                                <div>{answer[0].question}</div>
                             </div>
                         ) : ("")
                     }
