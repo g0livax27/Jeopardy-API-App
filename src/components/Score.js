@@ -3,7 +3,7 @@ export default function Score({ content }) {
       <div
         className="score"
         style={content >= 0 ? { color: "black" } : { color: "red" }}
-      >
+        >
         {content}
       </div>
     )

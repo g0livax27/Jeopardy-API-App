@@ -17,7 +17,17 @@ body {
     padding: 1rem;
 }
 
+.score-container > h3 {
+    text-align: center;
+    color: palevioletred;
+    padding: .25rem;
+}
+
 .score-container > h3,
+.score-container > div {
+    display: inline;
+}
+
 .answer-container > h2 {
     text-align: center;
     color: palevioletred;
@@ -69,10 +79,10 @@ body {
     justify-content: center;
 }
 
-/* .answer-info-content > #title,
+.answer-info-content > #title,
 .answer-info-content > p {
     display: inline;
-} */
+}
 
 #title {
     color: palevioletred;
@@ -90,18 +100,23 @@ p {
 }
 
 .question-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
+    align-items: center;
 }
 
 .question-btn {
     border-radius: 8px;
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
     background-color: darkblue;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 #reveal {
+    align-items: center;
     color: palevioletred;
 }

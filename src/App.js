@@ -57,7 +57,9 @@ export default function App(props) {
                 <Header/>
             </div>
             <div className="score-container">
-                <h3>Score: <Score content={score} /></h3>
+                <h3>Score:</h3> <Score content={score} /><br/><br/>
+            </div>
+            <div className="score-btn-container">
                 <ScoreBtn
                     content={"Decrease"}
                     handleClick={decrease}
@@ -85,9 +87,9 @@ export default function App(props) {
                     {
                         Object.keys(answer).length ? (
                             <div className="answer-info-content">
-                                <h3 id="title">Category:</h3> <p>{answer[0].category.title}</p>
-                                <h4 id="title">Points:</h4> <p>{answer[0].value}</p>
-                                <h4 id="title">Answer:</h4> <p>{answer[0].question}</p>
+                                <h3 id="title">Category:</h3> <p>{answer[0].category.title}</p><br/><br/>
+                                <h4 id="title">Points:</h4> <p>{answer[0].value}</p><br/><br/>
+                                <h4 id="title">Answer:</h4> <p>{answer[0].question}</p><br/><br/>
                             </div>
                         ) : ("")
                     }
