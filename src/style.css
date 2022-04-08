@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Source Code Pro;
+    margin: auto;
+    padding: .5rem;
+}
+
 body {
-    background-color: teal;
+    background-color: paleturquoise;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.score-container > h3,
+.answer-container > h2 {
+    text-align: center;
+    color: palevioletred;
+    padding: .25rem;
+}
+
+.decrease,
+.increase,
+.reset {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: .25rem;
+    font-family: Source Code Pro;
+}
+
+.decrease {
+    background-color: lightcoral;
+}
+
+.increase {
+    background-color: palegreen;
+}
+
+.reset {
+    background-color: red;
+}
+
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-btn {
+    align-items: center;
+    border-radius: 8px;
+    padding: .45rem;
+    background-color: palegoldenrod;
+}
+
+.answer-info {
+    padding: 1.5rem;
+}
+
+.answer-info-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .answer-info-content > #title,
+.answer-info-content > p {
+    display: inline;
+} */
+
+#title {
+    color: palevioletred;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.answer-btn,
+.question-btn {
+    font-family: Source Code Pro;
+}
+
+.question-container {
+    position: relative;
+    justify-content: center;
+}
+
+.question-btn {
+    border-radius: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: darkblue;
+    color: whitesmoke
+}
+
+#reveal {
+    color: palevioletred;
 }
