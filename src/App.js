@@ -90,7 +90,6 @@ export default function App(props) {
                                 <h3 id="title">Category:</h3> <p>{answer[0].category.title}</p><br/><br/>
                                 <h4 id="title">Points:</h4> <p>{answer[0].value}</p><br/><br/>
                                 <h4 id="title">Answer:</h4> <p>{answer[0].question}</p><br/><br/>
-                                <div>{answer[0].question}</div>
                             </div>
                         ) : ("")
                     }
